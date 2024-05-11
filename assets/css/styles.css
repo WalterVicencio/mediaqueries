@@ -1,16 +1,49 @@
 @media (min-width: 576px){
-    body{
-        background-color: red;
-    }
 
     nav{
         grid-area: nav;
-        background-color: green;
+        background-color: #08549c;
     }
+
+
+
+    /*-------TRANSVERSALES-----------*/
+
+    nav div{
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+    nav li{
+        color: white;
+        list-style: none;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .lista{
+        padding: 3px;
+        border-radius: 5px;
+        min-width: 100%;
+        
+    }
+    
+    /*-------FIN TRANSVERSALES-----------*/
 
     .search{
         grid-area: search;
-        background-color: blue;
+        background-color: #e8e4e4;
+
+        padding: 20px;
     }
 
     main{
@@ -26,14 +59,15 @@
     .contenido{
         display: grid;
         border: 1px solid black;
-        grid-template-columns: 1fr 10fr;
-        grid-template-rows: 1fr 30fr 1fr;
+        grid-template-columns: 1.5fr 10fr;
+        grid-template-rows: 1fr 20fr 1fr;
         grid-template-areas: 
             "nav search"
             "nav main"
             "footer main";
     }
 
+    
 
 }
 
