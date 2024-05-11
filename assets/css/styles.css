@@ -1,0 +1,40 @@
+@media (min-width: 576px){
+    body{
+        background-color: red;
+    }
+
+    nav{
+        grid-area: nav;
+        background-color: green;
+    }
+
+    .search{
+        grid-area: search;
+        background-color: blue;
+    }
+
+    main{
+        grid-area: main;
+        background-color: red;
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: brown;
+    }
+
+    .contenido{
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr 30fr 1fr;
+        grid-template-areas: 
+            "nav search"
+            "nav main"
+            "footer main";
+    }
+
+
+}
+
+
