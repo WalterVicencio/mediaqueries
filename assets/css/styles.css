@@ -1,11 +1,109 @@
+
+nav ul{
+    display: none;
+}
+
+nav{
+    background-color: #08549c;
+    color: white;
+    margin:0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.search{
+    background-color: #e8e4e4;
+    padding: 5px 15px 15px 15px;
+}
+
+.search p{
+    text-align: center;
+}
+
+.lista{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100%;
+    border: none;
+}
+
+
+.tarjeta{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    gap: 5px;
+
+}
+.tarjeta p{
+    margin: 0px;;
+}
+.tarjeta button{
+    background-color: #08549c;
+    margin: 0px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.tarjeta img{
+    width: 200px;
+}
+
+.main{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: auto;
+    justify-content: center;
+
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    background-color: #082c6c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.iconos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
 @media (min-width: 576px){
 
     nav{
         grid-area: nav;
+        display: block;
         background-color: #08549c;
     }
 
+    .chico{
+        display: none;
+    }
 
+    nav ul{
+        display: block;
+    }
 
     /*-------TRANSVERSALES-----------*/
 
@@ -31,11 +129,45 @@
     }
 
     .lista{
-        padding: 3px;
+        padding: 10px;
         border-radius: 5px;
         min-width: 100%;
-        
+        border: none;
     }
+    .tarjeta{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        gap: 5px;
+ 
+    }
+    .tarjeta p{
+        margin: 0px;;
+    }
+    .tarjeta button{
+        background-color: #08549c;
+        margin: 0px;
+        padding: 5px 10px;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .tarjeta img{
+        width: 200px;
+    }
+
+    .main{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: auto auto auto auto;
+    }
+
     
     /*-------FIN TRANSVERSALES-----------*/
 
@@ -43,32 +175,56 @@
         grid-area: search;
         background-color: #e8e4e4;
 
-        padding: 20px;
+        padding: 5px 15px 15px 15px;
+    }
+
+    .search p{
+        text-align: center;
     }
 
     main{
         grid-area: main;
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paginacion{
+        text-align: center;
+        align-items: center;
     }
 
     footer{
         grid-area: footer;
-        background-color: brown;
+        background-color: #082c6c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .iconos{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
     }
 
     .contenido{
         display: grid;
-        border: 1px solid black;
         grid-template-columns: 1.5fr 10fr;
-        grid-template-rows: 1fr 20fr 1fr;
+
         grid-template-areas: 
             "nav search"
             "nav main"
             "footer main";
     }
-
-    
-
 }
+
+
+
+
 
 
